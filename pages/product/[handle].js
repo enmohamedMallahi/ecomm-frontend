@@ -4,7 +4,7 @@ import { storeFront } from '../../utils';
 export default function ProductDetails({ product }) {
 	const variantId = product?.variants.edges[0].node.id;
 
-	// console.log(product);
+	console.log(product);
 
 	const [liked, setLiked] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
@@ -87,7 +87,7 @@ export default function ProductDetails({ product }) {
 					<div className='space-y-4'>
 						<div className='bg-gray-100 rounded-lg overflow-hidden'>
 							<img
-								src={product.images.edges[0].node.src}
+								src={product?.images.edges[0].node.src}
 								loading='lazy'
 								alt='Photo by Himanshu Dewangan'
 								className='w-full h-full md:h-[30rem] object-cover object-center'
@@ -99,7 +99,7 @@ export default function ProductDetails({ product }) {
 						<div className='mb-2'>
 							{/* <span className="inline-block text-gray-500 mb-0.5">Fancy Brand</span> */}
 							<h2 className='text-gray-800 text-2xl lg:text-3xl font-bold'>
-								{product.title}
+								{product?.title}
 							</h2>
 						</div>
 
@@ -108,7 +108,7 @@ export default function ProductDetails({ product }) {
 
 							<div className='space-y-6'>
 								<p className='text-base leading-4 h-16  overflow-hidden text-gray-900'>
-									{product.description}
+									{product?.description}
 								</p>
 							</div>
 						</div>
@@ -210,7 +210,7 @@ export default function ProductDetails({ product }) {
 										</svg>
 									) : (
 										<span>
-											Pay {product.priceRange.minVariantPrice.amount} Dhs
+											Pay {product?.priceRange.minVariantPrice.amount} Dhs
 										</span>
 									)}
 								</button>
