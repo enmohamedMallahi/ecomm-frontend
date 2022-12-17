@@ -4,6 +4,8 @@ import { storeFront } from '../../utils';
 export default function ProductDetails({ product }) {
 	const variantId = product.variants.edges[0].node.id;
 
+	// console.log(product);
+
 	const [liked, setLiked] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
 

@@ -2,11 +2,7 @@ import Link from 'next/link';
 
 const ProductCard = ({ product }) => {
 	return (
-		<Link
-			key={product.id}
-			href={`/product/${product.handle}`}
-			className='group'
-		>
+		<Link href={`/product/${product.handle}`} className='group'>
 			<div className='aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8'>
 				<img
 					src={product.images.edges[0].node.src}
