@@ -15,5 +15,6 @@ export async function storeFront(query, variables = {}) {
 		}
 	);
 	const data = await response.json();
+	// console.log
 	return data;
 }

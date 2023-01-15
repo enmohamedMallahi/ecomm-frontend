@@ -49,8 +49,9 @@ export default function Example() {
 						<div>
 							<div>
 								<h1 className='text-4xl font-bold tracking-tight sm:text-center sm:text-5xl'>
-									Data to <span className='text-indigo-700'>enrich</span> your
-									online <span className='text-indigo-700'>business</span>
+									<span className='text-indigo-700'>Fresh Styles</span> for
+									Every Occasion at{' '}
+									<span className='text-indigo-700'>Affordable Prices</span>
 								</h1>
 								<p className='mt-6 text-lg leading-8 text-gray-600 sm:text-center'>
 									Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
@@ -58,12 +59,18 @@ export default function Example() {
 									occaecat fugiat aliqua.
 								</p>
 								<div className='mt-8 flex gap-x-4 sm:justify-center'>
-									<a
+									{/* <a
 										href='#'
 										className='inline-block divide-x divide-indigo-500 rounded bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 transition duration-100 hover:opacity-80 hover:bg-indigo-700 hover:ring-indigo-700'
 									>
 										<span className='pr-3'>Get Started</span>
 										<span className='pl-3'>For Free</span>
+									</a> */}
+									<a
+										href='#'
+										className='inline-block rounded bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 transition duration-100 hover:opacity-80 hover:bg-indigo-700 hover:ring-indigo-700'
+									>
+										<span>Browse Products</span>
 									</a>
 								</div>
 							</div>

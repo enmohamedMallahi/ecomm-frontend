@@ -2,6 +2,9 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { storeFront } from '../utils';
 import Header from '../components/Header';
+import Features from '../components/Features';
+import Stats from '../components/Stats';
+import Footer from '../components/Footer';
 import ProductsList from '../components/ProductsList';
 
 export default function IndexPage({ products }) {
@@ -16,6 +19,9 @@ export default function IndexPage({ products }) {
 
 			<Header />
 			<ProductsList productEdges={products.edges} />
+			<Features />
+			<Stats />
+			<Footer />
 		</div>
 	);
 }
